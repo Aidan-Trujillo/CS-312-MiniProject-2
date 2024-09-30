@@ -1,6 +1,7 @@
 // constants
-const PostsPath = './blogPosts.json';
+
+const PORT = 8080;
 
 module.exports = {
-    PostsPath
+    PORT
 };
