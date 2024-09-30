@@ -1,0 +1,19 @@
+{
+  "name": "cs-312-miniproject-2",
+  "version": "1.0.0",
+  "description": "The second project for my web programming class. It uses Node.js to make an Express.js server that will probably run on EJS. It will also utilize Axios to make HTTP requests to public facing APIs.",
+  "main": "constants.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7"
+  }
+}
