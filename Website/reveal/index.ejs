@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A blog page for CS 312">
+    <meta name="author" content="Aidan Trujillo">
+    <meta name="keywords" content="Joke, CS312, CS, NAU, Aidan, Trujillo">
+
+    <title>BANG</title>
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Cascading Style Sheet -->
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+<body>
+    <main>        
+        <!-- Alwyas show both because if it doesn't exist it'll be empty string -->
+        <h1 style="margin-top: 100px"><%=joke %></h1>
+        <h1 style="margin-top: 100px"><%=setup %></h1>
+
+        <!-- Button with inline js and logic to set hide if single joke -->
+        <button id="reveal-button" class="<%= type === 'single' ? 'hide' : '' %>"
+        onclick="document.getElementById('delivery').classList.toggle('hide');
+        document.getElementById('reveal-button').classList.toggle('hide')">
+            Reveal!
+        </button>
+        <h1 class="hide" id="delivery" style="margin-top: 20px"><%=delivery %> </h1>
+
+    </main>
+
+        <a href="/"><button >Back To Joke Generator</button></a>
+
+    <footer>
+        <p>&copy; 2024 Aidan Trujillo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
